@@ -1,0 +1,37 @@
+﻿<Page x:Class="Lopuh.Pages.AddAgentPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Lopuh.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddAgentPage">
+
+    <Grid>
+        <Button x:Name="BackBtn" Content="Назад" Margin="20" Height="30" Width="50" Background="#00CC76" Foreground="White" Click="BackBtn_Click" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel>
+                    <Label Content="название продукта"/>
+                    <TextBox x:Name="TitleTxt" Height="30" Width="180" Margin="0,0,5,0"/>
+                    <Label Content="тип продукта"/>
+                    <ComboBox x:Name="TypeProduct" Height="30" Width="180" Margin="0,0,5,0" />
+                    <Label Content="артикль"/>
+                    <TextBox x:Name="ArticleNum" Height="30" Width="180" Margin="0,0,5,0"/>
+                    <Label Content="кол-во чел для производства"/>
+                    <TextBox x:Name="CountHumProd" Height="30" Width="180" Margin="0,0,5,0"/>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Номер для производства"/>
+                    <TextBox x:Name="NumbProd" Height="30" Width="180" Margin="0,0,5,0"/>
+                    <Label Content="цена для агента"/>
+                    <TextBox x:Name="MinCostFA" Height="30" Width="180" Margin="0,0,5,0"/>
+                    <Image x:Name="LogoFrame" Width="100" Height="100"/>
+                    <Button x:Name="LogoBtn" Content="добавить картинку" Height="30" Width="180" Margin="0,0,5,0" Click="LogoBtn_Click"/>
+                </StackPanel>
+            </StackPanel>
+            <Button x:Name="AddNewProduct" Background="#00CC76" Foreground="White" Height="30" Width="180" Margin="5" Content="Добавить продукт" Click="AddAgentBtn_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
